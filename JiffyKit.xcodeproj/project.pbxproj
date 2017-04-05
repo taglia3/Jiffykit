@@ -10,6 +10,7 @@
 		A63F80C81E94F86C0024E17B /* JiffyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63F80BE1E94F86C0024E17B /* JiffyKit.framework */; };
 		A63F80CD1E94F86C0024E17B /* JiffyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F80CC1E94F86C0024E17B /* JiffyKitTests.swift */; };
 		A63F80CF1E94F86C0024E17B /* JiffyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A63F80C11E94F86C0024E17B /* JiffyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A63F80D91E94F8760024E17B /* JiffyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63F80D81E94F8760024E17B /* JiffyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A63F80C71E94F86C0024E17B /* JiffyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiffyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63F80CC1E94F86C0024E17B /* JiffyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiffyKitTests.swift; sourceTree = "<group>"; };
 		A63F80CE1E94F86C0024E17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A63F80D81E94F8760024E17B /* JiffyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiffyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				A63F80C11E94F86C0024E17B /* JiffyKit.h */,
 				A63F80C21E94F86C0024E17B /* Info.plist */,
+				A63F80D81E94F8760024E17B /* JiffyManager.swift */,
 			);
 			path = JiffyKit;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					A63F80BD1E94F86C0024E17B = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = N6XLS4CAT3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A63F80C61E94F86C0024E17B = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63F80D91E94F8760024E17B /* JiffyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		A63F80D31E94F86C0024E17B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = N6XLS4CAT3;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigielle.JiffyKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		A63F80D41E94F86C0024E17B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = N6XLS4CAT3;
@@ -362,6 +370,7 @@
 		A63F80D61E94F86C0024E17B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = N6XLS4CAT3;
 				INFOPLIST_FILE = JiffyKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		A63F80D71E94F86C0024E17B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = N6XLS4CAT3;
 				INFOPLIST_FILE = JiffyKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
